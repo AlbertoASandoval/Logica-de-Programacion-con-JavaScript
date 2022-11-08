@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promedio de Calificaciones con Array</title>
+</head>
+<body>
+    
+<h3>Ejercicio para Calcular el promedio de Calificaciones con un Array</h3>
+    <script>
+
+        //Declaración de variables
+        let numero_elementos = prompt("Introduce el numero de materias");
+        let Calificaciones = new Array(numero_elementos); //Declaración de un arreglo
+           for (let i = 0; i < numero_elementos; i++) { //Ciclo for para introducir los valores al arreglo
+               Calificaciones[i] = prompt("Introduce la calificacion de la materia " + (i + 1));
+           }
+              let suma = 0; //Variable para almacenar la suma de las calificaciones
+                for (let i = 0; i < numero_elementos; i++) { //Ciclo for para sumar las calificaciones
+                    suma = suma + parseInt(Calificaciones[i]); //Suma de las calificaciones
+                }
+                let promedio = suma / numero_elementos; //Variable para almacenar el promedio de las calificaciones
+                document.write("El promedio de las calificaciones es: " + promedio);
+    </script>
+
+</body>
+</html>

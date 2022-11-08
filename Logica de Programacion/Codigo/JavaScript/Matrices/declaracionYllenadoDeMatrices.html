@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matrices en JS</title>
+</head>
+<body>
+    
+    <script>
+       //Declaración de una matriz
+       renglones = 2;
+       columnas  = 3;
+
+         let matriz = new Array(renglones, columnas); //Declaración de un arreglo
+         //Llenado de una matriz manualmente
+            //Llenamos el primer renglón
+            matriz[0][0] = 100;   //Renglon 0, Columna 0
+            matriz[0][1] = 200;   //Renglon 0, Columna 1
+            matriz[0][2] = 300;   //Renglon 0, Columna 2
+
+            //Llenamos el segundo renglón
+            matriz[1][0] = 400;   //Renglon 1, Columna 0    
+            matriz[1][1] = 500;   //Renglon 1, Columna 1
+            matriz[1][2] = 600;   //Renglon 1, Columna 2
+
+        //Acceder a los elementos de una matriz
+        document.write("El elemento de la matriz en la posición 0,0 es: " + matriz[0][0] + "<br>");
+        //Iterar los elementos de una matriz
+        for (let i = 0; i < renglones; i++) {       //Ciclo anidado for para recorrer los renglones e iterar los elementos de la matriz
+            for (let j = 0; j < columnas; j++) {
+                document.write("El elemento de la matriz en la posición " + i + "," + j + " es: " + matriz[i][j] + "<br>");
+            }
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let numero_elementos = prompt("Introduce el numero de Elementos");
+        let arreglo = new Array(numero_elementos);                          //Declaración de un arreglo
+
+        for (let i = 0; i < numero_elementos -1; i++) {
+            arreglo[i] = prompt("Introduce el elemento " + (i + 1) + " del arreglo"); //Ciclo for para introducir los valores al arreglo
+        }
+        // Buscar Valor Mayor y Menor
+        let mayor = arreglo[0];                       //Variable para almacenar el valor mayor
+        let menor = arreglo[0];                       //Variable para almacenar el valor menor
+
+        
+        for (let i = 1; i < numero_elementos.length -1 ; i++) {  // "i = 1"  porque ya se comparo el primer elemento en las variables mayor y menor
+            if (numero_elementos[i] > mayor) {
+                mayor = numero_elementos[i];
+            }
+        }
+        for (let i = 0; i < numero_elementos.length; i++) {
+            if (numero_elementos[i] < menor) {
+                menor = numero_elementos[i];
+            }
+        }
+        document.write("El numero mayor es: " + mayor + " El numero Menor es: "+ menor + "<br>");
+    </script>
+</body>
+</html>

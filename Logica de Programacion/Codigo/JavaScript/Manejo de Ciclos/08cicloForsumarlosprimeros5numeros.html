@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sumar los 5 primeros Numeros</title>
+</head>
+<body>
+
+    <script>
+
+        var acumulador_suma = 0; // Acumulador de la suma de los primeros 5 numeros
+
+        for (let numero_var = 0; numero_var <= 5; numero_var++ ){  // numero_var = 0, 1, 2, 3, 4, 5
+
+            acumulador_suma = acumulador_suma + numero_var; // acumulador_suma = 0 + 0, 0 + 1, 1 + 2, 3 + 3, 6 + 4, 10 + 5
+
+            document.write( acumulador_suma + "<br>");  // 0, 1, 3, 6, 10, 15
+
+        }
+
+    </script>
+    
+</body>
+</html>

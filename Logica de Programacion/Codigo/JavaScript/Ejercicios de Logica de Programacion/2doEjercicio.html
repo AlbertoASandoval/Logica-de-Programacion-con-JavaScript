@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculo de Precio de Terreno</title>
+
+</head>
+<body>
+    
+
+    <h3>Ejercicio Logica de Programacion Calcular Precio de Terreno</h3>
+
+    <script>
+
+        let ancho = prompt("Ingrese el ancho del Terreno en Metros Cuadrados : ");
+        let largo = prompt("Ingrese el largo del Terreno en Metro Cuadrado : ");
+        let precio_m2 = prompt("Ingrese el precio del metro cuadrado : ");
+
+        var area = ancho * largo;
+        var precio_total = area * precio_m2;
+
+        document.write("El area del terreno es : " + area + " Metros Cuadradados <br>");
+        document.write("El precio del Terreno es : " + precio_total);
+
+    </script>
+    
+</body>
+</html>

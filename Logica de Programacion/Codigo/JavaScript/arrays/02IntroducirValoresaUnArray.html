@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introducir Valores a un arreglo</title>
+</head>
+<body>
+
+    <h2>Segundo Ejercicio</h2>
+    <h3>Introducir Valores a un arreglo</h3>
+    <hr>
+   
+
+    <script>
+     
+      
+     let elementos = prompt("¿Cuántos elementos quieres introducir en el arreglo?");
+        let arreglo = new Array(elementos);
+        if (elementos > 0) {
+            for (let i = 0; i < elementos; i++) {
+                arreglo[i] = prompt("Introduce el elemento " + (i + 1)+ " del arreglo");
+            }
+            document.write("El arreglo tiene " + elementos + " elementos");
+
+            for (let i = 0; i < elementos; -1) {
+                document.write("<br>El elemento " + (i + 1) + " es " + arreglo[i]);
+            }
+        }
+        
+
+    </script>
+    
+</body>
+</html>

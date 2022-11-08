@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intercambio de Valores</title>
+</head>
+<body>
+    
+    <script>
+        //Solicitamos el valor de entrada 
+        let a = prompt("Introduce el valor de a");
+        let b = prompt("Introduce el valor de b");
+
+        //Intercambiamos los valores
+        var temp = a; //Guardamos el valor de a en una variable temporal
+        a = b;
+        b = temp; //Invertimos los valores
+
+        document.write("Nuevo valor de a es: " + a + "<br>");
+        document.write("Nuevo valor de b es: " + b);
+
+    </script>
+
+</body>
+</html>

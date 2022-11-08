@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ciclo Fibonacci con ciclos</title>
+</head>
+<body>
+    
+    <script>
+
+        var numero = 1;
+        var numero2 = 1;
+        var valor_serie = 0;
+       
+
+        for (let i = 1; i <= 10; i++){ //i = 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+
+            valor_serie = numero + numero2; //numero3 = 0 + 1 = 1, 1 + 1 = 2, 1 + 2 = 3, 2 + 3 = 5, 3 + 5 = 8, 5 + 8 = 13, 8 + 13 = 21, 13 + 21 = 34, 21 + 34 = 55, 34 + 55 = 89
+
+            numero = numero2; //numero = 1, 1, 2, 3, 5, 8, 13, 21, 34, 55
+
+            numero2 = valor_serie; //numero2 = 1, 2, 3, 5, 8, 13, 21, 34, 55, 89
+
+            
+            document.write("El resultado de la serie Fibonacci es: " + valor_serie + "<br>");
+
+        }
+    </script>
+
+</body>
+</html>

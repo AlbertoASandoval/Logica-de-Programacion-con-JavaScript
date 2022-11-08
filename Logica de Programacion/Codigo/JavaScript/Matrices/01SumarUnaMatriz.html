@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sumar una Matriz</title>
+</head>
+<body>
+    <h1>02 Ejercicio</h1>
+    <h3>Ejercicio de Sumar en diagonal una Matriz</h3>
+    <hr>
+    <h3>Insertar los valores de la matriz y esta sumara los numeros de la matriz</h3>
+    <h3>Ejemplo</h3>
+    <li>
+        <ul>[0,0] [0,1] [0,2]</ul>
+        <ul>[1,0] [1,1] [1,2]</ul>
+        <ul>[2,0] [2,1] [2,2]</ul>
+    </li>
+    <h4>[0,0][1,1][2,2] ...</h4>
+
+    <script>
+
+        //Sumar una Matriz
+        let filas    = parseInt(prompt("Introduce el numero de Filas "));
+        let columnas = parseInt(prompt("Introduce el numero de Columnas"));
+        let matriz   = new Array(filas); //Declaración del arreglo de filas
+
+        for (let i = 0; i < filas; i++) {
+            matriz[i] = new Array(columnas);//Declaración de un arreglo dentro de otro arreglo en este caso para columnas
+        }
+        //Usando For Anidados
+        for (let i = 0; i < filas; i++) {
+            for (let j = 0; j < columnas; j++) {
+                matriz[i][j] = parseInt(prompt("Introduce el elemento " + (i + 1) + " del arreglo"));
+            }
+        }
+
+        //Desplegar la matriz
+        for (let i = 0; i < filas; i++) {            //filas       
+            for (let j = 0; j < columnas; j++) {    //columnas
+                document.write(matriz[i][j] + " ");
+            }
+            document.write("<br>");
+        }
+
+        //Sumar en diagonal
+        let suma = 0;
+        for (let i = 0; i < filas; i++) {            //filas
+            for (let j = 0; j < columnas; j++) {    //columnas
+                if (i == j) {
+                    suma = suma + matriz[i][j];
+                }
+            }
+        }
+        document.write("La suma de la diagonal es: " + suma);
+        
+    </script>
+</body>
+</html>

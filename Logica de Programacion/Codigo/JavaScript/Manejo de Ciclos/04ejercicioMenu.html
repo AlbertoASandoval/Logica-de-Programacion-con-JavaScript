@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        
+
+        let seleccion = prompt("Menu : \n 1. Saludar \n 2. Salir ");
+
+            do {                                           //mientras la condicion sea verdadera
+                switch (seleccion) {                       //selecciona la opcion
+                    case "1":
+                        alert("Hola Prros");               //si es 1 muestra el mensaje
+                        if (seleccion == "1") {            //si es 1
+                            seleccion = prompt("Menu : \n 1. Saludar \n 2. Salir ");//muestra el menu
+                        }
+                        break;
+                    case "2":                               //si es 2
+                        alert("Esta Saliendo del Menu");
+                        break;
+                    default:                                //si no es ninguna de las anteriores y repite el loop
+                        alert("Opcion no valida");
+                        if (seleccion != "1" || seleccion != "2") { //si no es 1 o 2
+                            seleccion = prompt("Menu : \n 1. Saludar \n 2. Salir ");//muestra el menu
+                        }
+                        break;
+                }
+            } while (seleccion != 2);                       //mientras la seleccion sea diferente de 2
+
+    </script>
+</body>
+</html>

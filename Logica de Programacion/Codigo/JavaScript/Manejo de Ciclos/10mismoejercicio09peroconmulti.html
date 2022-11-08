@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio con Multiplicacion</title>
+</head>
+<body>
+    
+    <script>
+
+        var acumulador_multi = 1; // Acumulador de la multiplicacion de los primeros 5 numeros
+
+        for (let numero_var = 1; numero_var <= 5; numero_var++){ // numero_var = 1, 2, 3, 4, 5
+                
+                acumulador_multi = acumulador_multi * numero_var;
+    
+                document.write( acumulador_multi + "<br>");
+    
+        }
+
+        // 1.-Definimos la variable acumulador_multi = 1, 
+        //porque si la definimos en 0, el resultado seria 0, y no 120.
+        
+        // 2.- En el ciclo For, definimos la variable numero_var = 1,
+        // porque si la definimos en 0, el resultado seria 0, y no 120.
+
+        // 3.- En el ciclo For, definimos la condicion de que numero_var sea menor o igual a 5,
+        // ejecutamos nuestra variable acumulador_multi = acumulador_multi * numero_var, 
+        // y hacemos la operacion que se multiplique el acumulador_multi por numero_var,
+        // y despues hacemos que numero_var se incremente en 1, y asi sucesivamente hasta que numero_var sea menor o igual a 5.
+
+    </script>
+
+</body>
+</html>

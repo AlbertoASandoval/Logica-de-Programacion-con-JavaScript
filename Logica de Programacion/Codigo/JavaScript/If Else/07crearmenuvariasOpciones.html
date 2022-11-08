@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        var opcion = prompt("Elija una opción: \n 1. Sumar \n 2. Restar \n 3. Multiplicar \n 4. Dividir");//\n es para 
+        //hacer un salto de linea
+
+        if (opcion == 1) {
+            var num1 = prompt("Ingrese el primer número");
+            var num2 = prompt("Ingrese el segundo número");
+            var resultado = parseInt(num1) + parseInt(num2);//parseInt convierte a entero
+            alert("El resultado de la suma es: " + resultado);
+
+        } else if (opcion == 2) {
+            var num1 = prompt("Ingrese el primer número");//var num1 = prompt("Ingrese el primer número");
+            var num2 = prompt("Ingrese el segundo número");
+            var resultado = parseInt(num1) - parseInt(num2);//parseInt convierte a entero
+            alert("El resultado de la resta es: " + resultado);
+
+        } else if (opcion == 3) { //Si no se pone el else if, se ejecuta todo el codigo de abajo
+            var num1 = prompt("Ingrese el primer número");
+            var num2 = prompt("Ingrese el segundo número");
+            var resultado = parseInt(num1) * parseInt(num2);
+            alert("El resultado de la multiplicación es: " + resultado);
+
+        } else if (opcion == 4) {
+            var num1 = prompt("Ingrese el primer número");
+            var num2 = prompt("Ingrese el segundo número");
+            var resultado = parseInt(num1) / parseInt(num2);
+            alert("El resultado de la división es: " + resultado);
+            
+        } else {
+            alert("Opción no válida");
+        }
+    </script>
+    
+</body>
+</html>

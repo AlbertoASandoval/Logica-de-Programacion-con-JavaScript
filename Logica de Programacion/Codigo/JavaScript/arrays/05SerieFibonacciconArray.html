@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array con serie de Fibonacci</title>
+</head>
+<body>
+    
+    <h1>Ejercicio 05</h1>
+    <h3>Array con serie de Fibonacci</h3>
+    <hr>
+
+    <script>
+
+        let tamanio_arreglo = prompt("Introdusca los numeros de la serie de Fibonacci que quiere hacer?");//Declaración de variable para el tamaño del arreglo
+        let serie_fibonacci = new Array(tamanio_arreglo);                                                //Declaración de un arreglo
+        //Arreglo para que los dos primeros numeros sean 1 y 1                                               
+        serie_fibonacci[0] = 1;                                                                        //Asignación del primer valor del arreglo
+        serie_fibonacci[1] = 1;
+        //Los siguientes valores se calculan con el Algoritmo de Fibonacci                                                                        
+        for (let i = 2; i < tamanio_arreglo - 1; i++) {                                             //Ciclo for para introducir los valores al arreglo
+            serie_fibonacci[i] = serie_fibonacci[i - 2] + serie_fibonacci[i - 1];                  //Algoritmo de Fibonacci
+        }
+        //Imprimir el Arreglo
+        for (let i = 0; i < tamanio_arreglo -1; i++) {
+            document.write(serie_fibonacci[i] + ", ");
+        }
+           
+
+
+    </script>
+</body>
+</html>

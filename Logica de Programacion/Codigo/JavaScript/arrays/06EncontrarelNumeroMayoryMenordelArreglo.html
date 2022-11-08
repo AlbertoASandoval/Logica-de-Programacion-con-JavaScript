@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 6</title>
+</head>
+<body>
+    <h1>Ejercicio 06</h1>
+    <h3>Encontrar el numero mayor y menor del arreglo</h3>
+    <hr>
+
+    <script>
+
+        let numbers = [-3, 7, 10, -1, 6];          //Declaración de un arreglo
+        let mayor = numbers[0];                    //Variable para almacenar el numero mayor
+        let menor = numbers[0];                    //Variable para almacenar el numero menor
+        for (let i = 0; i < numbers.length; i++) { //Ciclo for para encontrar el numero mayor
+            if (numbers[i] > mayor) {
+                mayor = numbers[i];
+            }
+        }
+        for (let i = 0; i < numbers.length; i++) { //Ciclo for para encontrar el numero menor
+            if (numbers[i] < menor) {
+                menor = numbers[i];                //Encontrar el numero menor
+            }
+        }
+        document.write("El numero mayor es: " + mayor + " El numero Menor es: "+ menor + "<br>");
+
+        // Que es length: https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/Array/length
+        // En este caso acortamos la matriz a 5 elementos
+        // numbers.length = 3;
+    </script>
+</body>
+</html>
